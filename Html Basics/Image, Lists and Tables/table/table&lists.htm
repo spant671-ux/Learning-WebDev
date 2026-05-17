@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Table in HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====== Table Section ====== -->
+    <table>
+        <caption>Student Details</caption>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Santosh</td>
+                <td>21</td>
+                <td>Pithoragarh</td>
+            </tr>
+            <tr>
+                <td>Prince</td>
+                <td>20</td>
+                <td>Bhimtal</td>
+            </tr>
+            <tr>
+                <!-- colspan="2" makes this cell span across two columns -->
+                <td colspan="2">Rahul</td>
+                <td>Haldwani</td>
+            </tr>
+            <tr>
+                <!-- rowspan="2" makes this cell span across two rows -->
+                <td rowspan="2">Golu</td>
+                <td>22</td>
+                <td>Pithoragarh</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Delhi</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ====== Unordered List (default disc bullets) ====== -->
+    <ul>
+        <li>Golu</li>
+        <li>22</li>
+        <li>Pithoragarh</li>
+    </ul>
+
+    <!-- ====== Ordered List ====== -->
+    <ol>
+        <li>Golu</li>
+        <li>22</li>
+        <li>Pithoragarh</li>
+    </ol>
+
+    <!-- ====== Definition List ====== -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, aut.</dd>
+
+        <dt>CSS</dt>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, culpa doloribus!</dd>
+    </dl>
+
+    <!-- ====== Unordered List (square bullets) ====== -->
+    <ul type="square">
+        <li>Golu</li>
+        <li>22</li>
+        <li>Pithoragarh</li>
+    </ul>
+
+</body>
+</html>

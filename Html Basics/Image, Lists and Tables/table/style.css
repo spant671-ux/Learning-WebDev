@@ -1,0 +1,5 @@
+/* Adding a 2px solid black border to all table data cells */
+td {
+    border: 2px solid black;
+    
+}
