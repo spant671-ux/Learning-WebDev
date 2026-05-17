@@ -1,0 +1,19 @@
+/* Block-level elements typically take up the full width available */
+p{
+    background-color: aquamarine;
+}
+
+/* Inline elements only take up as much width as necessary */
+a{
+    background-color: lightsalmon;
+}
+
+/* Div is a block-level container */
+div{
+    background-color: brown;
+}
+
+/* Span is an inline-level container */
+span{
+    background-color: lightblue;
+}
