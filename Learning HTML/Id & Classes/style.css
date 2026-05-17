@@ -1,0 +1,16 @@
+/* 
+   Class selector (.red): 
+   Applies a red text color to any element with class="red".
+*/
+.red{
+color: red;
+
+}
+
+/* 
+   Class selector (.bg-yellow): 
+   Applies a yellow background color to any element with class="bg-yellow".
+*/
+.bg-yellow{
+    background-color: yellow;
+}
