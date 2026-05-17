@@ -58,7 +58,13 @@ Learning Web Development/
 - Basic CSS styling for table borders
 
 ### 4. Forms and Input Tags
-- 🚧 *In progress* — exploring HTML forms and input elements
+- Creating HTML forms using the `<form>` tag with `action` attribute
+- Text input fields (`<input type="text">`) with `placeholder`, `id`, and `name` attributes
+- Associating labels with inputs using `<label for="...">`
+- **Radio buttons** (`<input type="radio">`) for single-choice selection (e.g., gender)
+- **Checkboxes** (`<input type="checkbox">`) for optional selections (e.g., newsletter subscription)
+- **Textarea** (`<textarea>`) for multi-line text input with `rows` and `cols` attributes
+- **Dropdown menus** (`<select>` and `<option>`) for list-based selection
 
 ---
 
@@ -74,5 +80,5 @@ Learning Web Development/
 
 ## 🚀 Status
 
-**Currently learning:** HTML Basics — Forms & Input Tags  
-**Up next:** CSS Fundamentals
+**Currently learning:** CSS Fundamentals  
+**Up next:** JavaScript Basics
