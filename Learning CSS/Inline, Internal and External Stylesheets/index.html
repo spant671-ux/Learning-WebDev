@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learning CSS - Stylesheets & Selectors</title>
+    
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Internal CSS -->
+
+    <!-- Internal CSS (Commented Out Demo) -->
     <!-- <style>
         p{
             background-color: blueviolet;
@@ -14,15 +17,32 @@
             color: red;
         }
     </style> -->
+
+    <!-- Internal CSS -->
     <style>
+        /* Element Selector */
         p{
             color:red;
         }
+
+        /* ID Selector */
         #article1{
             background-color: green;
         }
+
+        /* Class Selector */
         .paraClass{
             background-color: yellow;
+        }
+
+        /* Grouping Selector */
+        p,article{
+            width:500px;
+        }
+
+        /* Chained / Specificity Selector (p elements with paraClass) */
+        p.paraClass{
+            text-align: center;
         }
     </style>
 </head>
@@ -34,15 +54,15 @@
 
     <p class="paraClass">I'm learning WEB DEVELOPMENT</p>
 
-    <p class="paraClass">I'm learning CSS</p>
+    <p>I'm learning CSS</p>
 
     <article id="article1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam consequatur reiciendis ratione. Excepturi quae atque maxime ab autem, sapiente error corporis magnam perferendis reprehenderit exercitationem animi quos officiis aperiam unde soluta? Maxime quis nesciunt magni at adipisci accusantium, in ratione cumque nemo libero obcaecati laudantium, pariatur explicabo cupiditate amet.</article>
 
+    <!-- Inline CSS (Commented Out Demo) -->
     <!-- <h1>Learning CSS</h1> -->
-    <!-- Inline CSS-->
     <!-- <p style="background-color: yellow;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, doloribus. Aliquam explicabo molestias harum? Provident rem facilis odio explicabo necessitatibus!</p>
 
-    <p style="color: aqua;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa unde soluta voluptatum facilis placeat tempora delectus ipsum, id earum atque fuga, veritatis debitis esse omnis distinctio vitae dignissimos iste molestias.</p>
+    <p style="color: aqua;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa unde soluta voluptatum facilis placeat tempora delectus ipsum, id earum atque fuga, veritatis debitis esse omnis distinctio vitae...</p>
     
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, reprehenderit?</p>
 
