@@ -1,84 +1,106 @@
 # 🌐 Learning Web Development
 
-A hands-on learning repository documenting my journey through web development — starting with HTML fundamentals.
+A hands-on learning repository documenting my journey through web development—starting with HTML fundamentals and moving into CSS styling.
 
 ---
 
 ## 📂 Project Structure
 
-```
-Learning Web Development/
-└── Html Basics/
-    ├── First Page/
-    │   └── index.html
-    ├── Bookmark Manager/
-    │   └── index.html
-    ├── Image, Lists and Tables/
-    │   ├── image/
-    │   │   ├── index.html
-    │   │   └── image.jpg
-    │   └── table/
-    │       ├── table&lists.htm
-    │       └── style.css
-    └── Forms and Input Tags/
-        └── index.htm
+Here is the directory structure of the topics covered in this repository:
+
+```text
+Learning-WebDev/
+├── Learning HTML/
+│   ├── Bookmark Manager/
+│   │   └── index.html
+│   ├── Entities/
+│   │   └── index.htm
+│   ├── First Page/
+│   │   └── index.html
+│   ├── Forms and Input Tags/
+│   │   ├── index.htm
+│   │   └── practice.htm
+│   ├── Id & Classes/
+│   │   ├── index.html
+│   │   └── style.css
+│   ├── Image, Lists and Tables/
+│   │   ├── Image in HTML/
+│   │   │   ├── image.jpg
+│   │   │   └── index.html
+│   │   └── table/
+│   │       ├── style.css
+│   │       └── table&lists.htm
+│   ├── Inline and Block Elements/
+│   │   ├── index.html
+│   │   └── style.css
+│   ├── Semantic Tags/
+│   │   └── index.html
+│   └── Video, Audio and HTML/
+│       ├── audio.mp3
+│       ├── image.jpg
+│       ├── index.html
+│       └── video.mp4
+└── Learning CSS/
+    ├── Box Model/
+    │   └── index.htm
+    ├── Inline, Internal and External Stylesheets/
+    │   ├── index.html
+    │   └── style.css
+    └── Typography/
+        └── index.html
 ```
 
 ---
 
 ## 📘 Topics Covered
 
-### 1. First Page
-- Basic HTML document structure (`<!DOCTYPE>`, `<html>`, `<head>`, `<body>`)
-- Meta tags (`charset`, `viewport`)
-- Rendering plain text content in the browser
+### 1. 🏗️ HTML Basics (`/Learning HTML`)
 
-### 2. Bookmark Manager
-- Headings (`<h1>`, `<h2>`)
-- Hyperlinks using the `<a>` tag
-- Opening links in a new tab with `target="_blank"`
-- Organizing links into categories
-
-### 3. Image, Lists and Tables
-
-#### Image
-- Embedding images using the `<img>` tag
-- Setting image dimensions with the `height` attribute
-- Using the `alt` attribute for accessibility
-
-#### Tables & Lists
-- Creating tables with `<table>`, `<tr>`, `<th>`, `<td>`
-- Semantic table structure using `<thead>` and `<tbody>`
-- Table captions using `<caption>`
-- Spanning columns with `colspan` and rows with `rowspan`
-- Linking an external CSS stylesheet
-- **Unordered lists** (`<ul>`) with custom bullet types (`type="square"`)
-- **Ordered lists** (`<ol>`)
-- **Description lists** (`<dl>`, `<dt>`, `<dd>`)
-- Basic CSS styling for table borders
-
-### 4. Forms and Input Tags
-- Creating HTML forms using the `<form>` tag with `action` attribute
-- Text input fields (`<input type="text">`) with `placeholder`, `id`, and `name` attributes
-- Associating labels with inputs using `<label for="...">`
-- **Radio buttons** (`<input type="radio">`) for single-choice selection (e.g., gender)
-- **Checkboxes** (`<input type="checkbox">`) for optional selections (e.g., newsletter subscription)
-- **Textarea** (`<textarea>`) for multi-line text input with `rows` and `cols` attributes
-- **Dropdown menus** (`<select>` and `<option>`) for list-based selection
+*   **First Page**: Basic structure of an HTML5 document (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`, `<meta>` tags for character encoding and responsive viewports).
+*   **Bookmark Manager**: Structuring headers (`<h1>` to `<h6>`), hyperlinks (`<a>`), opening links in a new window/tab using `target="_blank"`, and content organization.
+*   **Entities**: Learning and using HTML entity characters (like `&lt;`, `&gt;`, `&amp;`) for escaping symbols.
+*   **Forms and Input Tags**: Building interactive forms using `<form>`, text inputs, radio buttons, checkboxes, dropdown selectors (`<select>` and `<option>`), textareas, labels associated via the `for` attribute, and standard attributes like `placeholder`, `name`, and `id`. Also contains `practice.htm` for hands-on practice.
+*   **Id & Classes**: Understanding how to use the global `id` (unique identifier) and `class` (style grouping identifier) attributes to target elements in external CSS.
+*   **Image, Lists and Tables**:
+    *   *Images*: Embedding image assets with the `<img>` tag, setting height and width, and writing descriptive alt text for accessibility.
+    *   *Tables*: Building structured tables using `<table>`, `<tr>`, `<th>`, and `<td>` with semantic wrappers (`<thead>`, `<tbody>`), captions, and attributes like `rowspan` and `colspan`.
+    *   *Lists*: Formatting unordered (`<ul>`), ordered (`<ol>`), and description (`<dl>`, `<dt>`, `<dd>`) lists.
+*   **Inline and Block Elements**: Deep-dive into HTML display behavior, contrasting block-level containers (like `<div>` and `<p>`) with inline containers (like `<span>` and `<a>`).
+*   **Semantic Tags**: Constructing readable, accessible layouts using HTML5 semantic elements like `<header>`, `<nav>`, `<main>`, and `<footer>`.
+*   **Video, Audio and HTML**: Incorporating rich media elements, including the `<video>` player (with attributes for size, control, loop, and posters), `<audio>` player, embedding scalable vector graphics (`<svg>`), and embedding remote sites/videos using `<iframe>`.
 
 ---
 
-## 🛠️ How to Use
+### 2. 🎨 CSS Fundamentals (`/Learning CSS`)
 
-1. Clone the repository:
+*   **Inline, Internal and External Stylesheets**: Comparing the three approaches to styling web pages, and demonstrating fundamental CSS selector systems:
+    *   Element Selectors (`p`)
+    *   ID Selectors (`#article1`)
+    *   Class Selectors (`.paraClass`)
+    *   Grouping Selectors (`p, article`)
+    *   Specificity / Chained Selectors (`p.paraClass`)
+*   **Box Model**: Working with the layout engine's spacing properties—`width`, `height`, `border` (with thickness, style, color, and curved corners using `border-radius`), `padding`, and `margin`.
+*   **Typography**: Styling text using `font-family` (system/fallback stacks), `font-size`, `font-weight`, and `line-height`. Explores standard CSS color models:
+    *   Named colors (e.g., `yellow`)
+    *   RGB & RGBA (Red, Green, Blue, Alpha transparency)
+    *   Hexadecimal codes (e.g., `#e12985`)
+    *   HSL (Hue, Saturation, Lightness)
+
+---
+
+## 🛠️ How to Run Locally
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/spant671-ux/Learning-WebDev.git
    ```
-2. Open any `.html` / `.htm` file in a web browser to view the output.
+2. **Open the files:**
+   Since this is a client-side learning project, you don't need to run a server. Simply locate any `.html` or `.htm` file on your filesystem and double-click to open it in your browser of choice.
 
 ---
 
-## 🚀 Status
+## 🚀 Learning Progress
 
-**Currently learning:** CSS Fundamentals  
-**Up next:** JavaScript Basics
+*   **Completed:** HTML Basics
+*   **Currently Learning:** CSS Fundamentals 🎨
+*   **Up Next:** JavaScript Basics ⚡
