@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* 
+           THE CSS BOX MODEL
+           Every element in HTML is represented as a rectangular box.
+           The box consists of:
+           1. Content - The text, images, or child elements (sized by width and height).
+           2. Padding - Clear space around the content, inside the border (inherits background color).
+           3. Border  - A border that goes around the padding and content.
+           4. Margin  - Clear space outside the border, separating the element from neighbors.
+        */
+
         h1{
             background-color:aquamarine;
             /* border-style:dashed; */
@@ -14,8 +24,12 @@
             /* border-top-left-radius: 5px; */
             /* border-top-right-radius: 5px; */
             /* border-bottom:solid brown 5px; */ 
+            
+            /* Border: shorthand for border-width, border-style, and border-color */
             border:solid black 3px;
             border-radius:5px;
+            
+            /* Content dimensions */
             width:350px;; 
             height:90px;
         }
@@ -23,15 +37,29 @@
             background-color:darkcyan;
             border:solid black 3px;
             border-radius:5px;
+            
+            /* Content width */
             width:350px;
+            
+            /* Padding: creates space inside the box between the content and the border */
             padding: 90px;
-            margin:30px;
+            
+            /* Margin: creates space outside the box, pushing other elements away */
+            margin: 30px;
+            
+            /* 
+               Total width calculation (default box-sizing: content-box):
+               Total Width = Margin-Left (30px) + Border-Left (3px) + Padding-Left (90px) + Content Width (350px) 
+                             + Padding-Right (90px) + Border-Right (3px) + Margin-Right (30px)
+                           = 596px
+            */
         }
         .secondPara{
             background-color:rgb(86, 255, 255);
             border:solid black 3px;
             border-radius:5px;
             width:350px;
+            padding: 15px 20px 30px 40px;
             /* height:90px; */
         }
         .thirdPara{
