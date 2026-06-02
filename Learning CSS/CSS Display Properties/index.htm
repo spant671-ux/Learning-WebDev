@@ -5,13 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* 
+           THE CSS DISPLAY PROPERTY
+           The display property specifies the display behavior (layout type) of an HTML element.
+           
+           Common values:
+           1. block        - The element starts on a new line and takes up the full width available. 
+                             It respects width, height, padding, and margin.
+                             Example: <div>, <p>, <h1>-<h6>, <section>
+                             
+           2. inline       - The element does not start on a new line and only takes up as much width as its content.
+                             It ignores width and height properties. Margin and padding work horizontally, 
+                             but vertical margin/padding do not affect the surrounding vertical layout flow.
+                             Example: <span>, <a>, <strong>, <em>
+                             
+           3. inline-block - The element behaves like an inline element (it flows inline with surrounding text/elements),
+                             but behaves like a block element in that it respects width, height, padding, and margin.
+                             
+           4. none         - The element is completely removed from the document flow; it is hidden and occupies zero space.
+        */
+
         *{
             margin:0;
             padding:0;
             box-sizing: border-box;
         }
         .box{
-            /* display:inline; */
+            /* display:inline; */ /* If set to inline, width (300px) and height (300px) would be ignored */
             width:300px;
             height:300px;
             border:1px solid black;
@@ -23,8 +43,8 @@
             height: 200px;
             padding: 5px;
             margin: 5px;
-            /* display: block; */
-            display: inline-block; 
+            /* display: block; */ /* If set to block, each span would start on a new line and take up full width */
+            display: inline-block; /* Flows inline (side-by-side) but respects width, height, margins, and padding */
         }
         /* div{
             border: 1px solid red;
