@@ -1,21 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      /* 
+         THE CSS POSITION PROPERTY
+         The position property specifies the type of positioning method used for an element.
+         Elements are then placed using the top, right, bottom, and left properties 
+         (these only work when position is set to something other than static).
+
+         Common values:
+         1. static       - Default value. The element is positioned according to the normal document flow.
+                           The top, right, bottom, left, and z-index properties have NO effect.
+
+         2. relative     - The element is positioned relative to its normal (static) position.
+                           Setting top, right, bottom, or left will offset it FROM where it would normally be.
+                           The original space it occupied in the document flow is preserved (other elements don't shift).
+                           Example: top: 20px; moves the element 20px DOWN from its normal position.
+
+         3. absolute     - The element is removed from the normal document flow (no space is reserved for it).
+                           It is positioned relative to its nearest positioned ancestor 
+                           (an ancestor with position: relative, absolute, fixed, or sticky).
+                           If no positioned ancestor exists, it positions relative to the <html> (viewport).
+                           Commonly used with a parent set to position: relative.
+
+         4. fixed        - The element is removed from the normal document flow (no space is reserved for it).
+                           It is positioned relative to the browser viewport (the visible screen area).
+                           It stays in the same place even when the page is scrolled.
+                           Example: A sticky navbar or a floating "back to top" button.
+
+         5. sticky       - The element toggles between relative and fixed positioning depending on scroll position.
+                           It behaves like relative until a given scroll offset (e.g., top: 0) is reached,
+                           then it "sticks" in place like fixed — but only within its parent container.
+                           Requires at least one of top, right, bottom, or left to work.
+                           Example: A section header that sticks to the top when you scroll past it.
+
+         Note on z-index:
+         - z-index only works on positioned elements (i.e., position is NOT static).
+         - Higher z-index values place the element in front of elements with lower z-index values.
+      */
+
+      div {
+        border: 1px solid black;
+      }
+      img {
+        margin: 10px;
+      }
+      .image2 {
+        /* top: 100px;
+            left: 100px;
+            position: relative; */ /* relative would shift image2 100px down and 100px right from its normal position,
+                                      but its original space in the flow would still be reserved */
+
+        position: absolute; /* Removes image2 from the document flow entirely.
+                               It is positioned relative to the nearest positioned ancestor (.container has position: relative).
+                               Other elements will fill the space image2 would have occupied. */
+            top:100px; /* Offsets 100px from the top edge of .container */
+      }
+
+      .container {
+        position: relative; /* Makes this the positioning reference (containing block) for any absolutely 
+                               positioned child elements inside it (like .image2).
+                               The container itself stays in normal flow — position: relative alone 
+                               doesn't move the element unless top/right/bottom/left are set. */
+        height: 1000px;
+        background-color: lightgray;
+      }
+      .image4 {
+        position: fixed; /* Removes image4 from the document flow and positions it relative to the viewport.
+                            It will stay in the same spot on screen even when the user scrolls the page. */
+      }
+      .image3 {
+        position: sticky; /* image3 behaves like a relatively positioned element until the user scrolls 
+                             past it by 100px from the top of the viewport. At that point, it "sticks" 
+                             in place (like fixed) and stays visible while scrolling — 
+                             but only within the bounds of its parent (.container). */
+        top: 100px; /* The scroll threshold: stick when 100px from the top of the viewport */
+      }
+      .box {
+        background-color: lightblue;
+        height: 5000px;
+      }
+    </style>
+  </head>
+  <body>
     <div class="container">
+      <img
+        src="1.jpg"
+        alt="Poster 1"
+        width="300px"
+        height="300px"
+        class="image1"
+      />
 
-        <img src="1.jpg" alt="Poster 1" width="300px" height="300px"/>
+      <img
+        src="2.jpg"
+        alt="Poster 2"
+        width="300px"
+        height="300px"
+        class="image2"
+      />
 
-        <img src="2.jpg" alt="Poster 2" width="300px" height="300px"/>
+      <img
+        src="3.jpg"
+        alt="Poster 3"
+        width="300px"
+        height="300px"
+        class="image3"
+      />
 
-        <img src="3.jpg" alt="Poster 3" width="300px" height="300px"/>
-
-        <img src="4.jpg" alt="Poster 4" width="300px" height="300px"/>
+      <img
+        src="4.jpg"
+        alt="Poster 4"
+        width="300px"
+        height="300px"
+        class="image4"
+      />
     </div>
-    
-</body>
-</html> 
+
+    <div class="box"></div>
+  </body>
+</html>
