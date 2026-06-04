@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The container height collapses to 0 (excluding the border) because 
+           all its children are floated and taken out of the normal document flow. 
+           To prevent collapse, we could apply 'overflow: auto', 'display: flow-root', 
+           or use a clearfix. */
+        .box{
+            border: 1px solid black;
+        }
+        /* float: left; aligns elements to the left of their container and 
+           allows subsequent elements to sit next to them on the right. */
+        .item{
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            float: left;
+        }
+        /* float: right; aligns specific items to the right side of the container. 
+           They will stack horizontally from right to left in the order of the HTML document. */
+        #item1{
+            float: right;
+        }
+        #item2{
+            float: right;
+        }
+        #item3{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item" id="item1">A</div>
+        <div class="item" id="item2">B</div>
+        <div class="item" id="item3">C</div>
+        </div>
+</body>
+</html>
