@@ -5,44 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      /* ==========================================
+         FLEX CONTAINER PROPERTIES
+         ========================================== */
       .container {
         background-color: beige;
         border: 5px solid black;
         margin: 2px;
         padding: 2px;
+        
+        /* display: flex -> Defines a flex container and enables a flex context for its direct children */
         display: flex;
+        
+        /* flex-direction -> Establishes the main-axis (direction items are laid out).
+           Options: row (default), row-reverse, column, column-reverse */
         flex-direction: row;
-        height: 1200px;
+        
+        height: 800px;
+        
+        /* flex-wrap -> Defines whether items should wrap to multiple lines if space is insufficient.
+           Options: nowrap (default - items shrink to fit one line), wrap, wrap-reverse */
         /* flex-wrap: wrap; */
+        
+        /* justify-content -> Aligns flex items along the main-axis (horizontal in row direction).
+           Options: start, end, center, space-between, space-around, space-evenly */
         justify-content: start;
+        
+        /* align-items -> Aligns flex items along the cross-axis (vertical in row direction).
+           Options: stretch (default), start, end, center, baseline */
         align-items: start;
+        
+        /* align-content -> Aligns lines within a multi-line flex container.
+           Only has effect when flex-wrap: wrap is enabled and there are multiple lines.
+           Options: stretch, start, end, center, space-between, space-around, space-evenly */
         align-content: center;
       }
+      
       .box {
-        height: 100px;
-        width: 100px;
+        /* height: 100px;
+        width: 100px; */
         border: 2px solid brown;
         margin: 2px;
         padding: 2px;
       }
+      
+      /* ==========================================
+         FLEX ITEM (CHILD) PROPERTIES
+         ========================================== */
       #box1 {
         background-color: aqua;
-        order: 500;
+        /* order -> Controls the visual order of items. Items with lower values appear first (default: 0). */
+        /* order: 500; */
+        
+        /* flex-shrink -> Defines the ability of a flex item to shrink if necessary.
+           Larger numbers shrink faster relative to others (default: 1). */
         /* flex-shrink: 4; */
-        flex-grow: 5;
+        
+        /* flex-grow -> Defines the ability of a flex item to grow to fill remaining space.
+           Numbers represent the proportion of extra space this item should take (default: 0). */
+        /* flex-grow: 1; */
+        
+        /* align-self -> Allows individual flex items to override the align-items value of the container. */
+        align-self: start;
       }
       #box2 {
         background-color: blue;
-        flex-grow: 1;
+        /* flex-grow: 1; */
       }
       #box3 {
         background-color: green;
-        flex-grow: 1;
+        /* flex-grow: 1; */
       }
       #box4 {
         background-color: red;
-        order: -1;
-        flex-grow: 1;
+        /* order: -1; */
+        /* flex-grow: 1; */
+        /* flex-basis -> Defines the default size of an item before remaining space is distributed. */
+        /* flex-basis: 400px; */
       }
     </style>
   </head>
