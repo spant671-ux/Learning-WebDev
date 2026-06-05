@@ -8,36 +8,41 @@
       .container {
         background-color: beige;
         border: 5px solid black;
-        margin:2px;
-        padding:2px;
+        margin: 2px;
+        padding: 2px;
         display: flex;
         flex-direction: row;
         height: 1200px;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         justify-content: start;
         align-items: start;
         align-content: center;
       }
-      .box{ 
+      .box {
         height: 100px;
         width: 100px;
         border: 2px solid brown;
-        margin:2px;
-        padding:2px;
+        margin: 2px;
+        padding: 2px;
       }
       #box1 {
         background-color: aqua;
         order: 500;
+        /* flex-shrink: 4; */
+        flex-grow: 5;
       }
       #box2 {
         background-color: blue;
+        flex-grow: 1;
       }
       #box3 {
         background-color: green;
+        flex-grow: 1;
       }
       #box4 {
         background-color: red;
-        order:-1;
+        order: -1;
+        flex-grow: 1;
       }
     </style>
   </head>
