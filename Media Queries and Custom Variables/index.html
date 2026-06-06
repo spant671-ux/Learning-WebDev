@@ -5,20 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box{
-            height:400px;
-            width:400px;
-            background-color: aqua;
-            border:3px solid black;
+        /* Base styles for the box element */
+        .box {
+            height: 400px;
+            width: 400px;
+            background-color: aqua; /* Default background color (light blue/aqua) */
+            border: 3px solid black;
         }
-        @media (min-width:300px) and (max-width:500px){
-            .box{
+
+        /* 
+           Media query targeting viewports with a width between 300px and 500px inclusive.
+           When the viewport width is within this range, the background color of the box changes to green.
+        */
+        @media (min-width: 300px) and (max-width: 500px) {
+            .box {
                 background-color: green;
             }
         }
     </style>
 </head>
 <body>
+    <!-- A simple box div to demonstrate media queries -->
     <div class="box">
         hello guys
     </div>

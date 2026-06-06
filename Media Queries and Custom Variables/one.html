@@ -5,45 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      .container{
-        background-color:beige;
-        border:5px solid black;
-        margin:2px;
-        padding:2px; 
-        display:flex;
+      /* Flex container containing the box elements */
+      .container {
+        background-color: beige;
+        border: 5px solid black;
+        margin: 2px;
+        padding: 2px; 
+        display: flex; /* Establishes a flex formatting context for its children */
       }
-      .box{
-        height:200px;
-        width:200px;
-        border:2px solid brown;
-        margin:2px;
-        padding:2px;
+
+      /* Base styling shared by all boxes */
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid brown;
+        margin: 2px;
+        padding: 2px;
       }
-      #box1{
+
+      /* Individual box background colors */
+      #box1 {
         background-color: aqua;
       }
-      #box2{
+      #box2 {
         background-color: blue;
       }
-      #box3{
+      #box3 {
         background-color: orange;
       }
-      #box4{
+      #box4 {
         background-color: green;
       }
-      @media (min-width:640px) {
-        .container{
+
+      /* 
+         Media Query for larger screens (640px width and up):
+         Arranges flex items horizontally (left to right).
+      */
+      @media (min-width: 640px) {
+        .container {
           flex-direction: row;
         }
       }
-      @media (max-width:640px){
-        .container{
+
+      /* 
+         Media Query for smaller screens (under 640px width):
+         Arranges flex items vertically (top to bottom) for mobile friendliness.
+      */
+      @media (max-width: 640px) {
+        .container {
           flex-direction: column;
         }
       }
     </style>
 </head>
 <body>
+  <!-- Container utilizing Flexbox and responsive media queries -->
   <div class="container">
     <div class="box" id="box1"></div>
     <div class="box" id="box2"></div>
