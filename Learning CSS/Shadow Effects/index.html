@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root{
+            --primary-color: brown;
+            --primary-width: 330px;
+        }
         .container{
             background-color: beige;
             height:650px;
@@ -14,19 +18,21 @@
             align-items:center;
         }
         .box{
-            --primary-color:brown;
-            --primary-width:330px;
             background-color: aquamarine;
             width:var(--primary-width);
             height: 330px;
             border:1px solid var(--primary-color);
             margin: 5px;
             padding:5px;
+            /* box-shadow: -10px -60px var(--primary-color); */
             /* box-shadow: 10px 10px brown; */
             /* box-shadow: 10px 15px 5px brown; */
             /* box-shadow: 10px 15px 5px 20px brown; */
             /* box-shadow: inset 10px 15px brown; */
             /* box-shadow: 10px 15px red, 15px 8px green; */
+        }
+        #head1{
+            text-shadow: 12px 13px 1px white;
         }
     </style>
 </head>
@@ -35,7 +41,7 @@
 
         <div class="box">
             <img src="1.jpg" height="100px">
-            <h2>Welcome to Shadow Effects</h2>
+            <h2 id="head1">Welcome to Shadow Effects</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consectetur cum velit sint eaque porro consequatur blanditiis. Nemo ut sunt nam veniam voluptates iste, quisquam nihil provident ea dolorum magnam dolores eveniet?</p>
         </div>
 
