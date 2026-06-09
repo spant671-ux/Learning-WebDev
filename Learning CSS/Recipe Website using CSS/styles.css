@@ -10,11 +10,13 @@
 }
 .navContainer{
     width:100vw;
-    background-color: rgba(113, 113, 154, 0.776);
+    /* background-color: rgba(113, 113, 154, 0.776); */
+    background-color: #0093E9;
+    background-image: linear-gradient(160 deg, #0093E9 0%, #80D0C7 100%);
     min-height: 80px;
     display: flex;
     justify-content: center;
-    position: relative;
+    position: relative; 
 }
 nav{
     width: 100%;
