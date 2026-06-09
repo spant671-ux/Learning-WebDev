@@ -17,6 +17,16 @@
             justify-content: center;
             align-items:center;
         }
+
+        /* ===== BOX-SHADOW =====
+           Syntax: box-shadow: [inset] offset-x offset-y [blur-radius] [spread-radius] color;
+           - offset-x : Horizontal offset (positive = right, negative = left)
+           - offset-y : Vertical offset (positive = down, negative = up)
+           - blur-radius : (Optional) Higher value = more blur. Default is 0 (sharp edge)
+           - spread-radius : (Optional) Positive = shadow expands, Negative = shadow shrinks
+           - inset : (Optional) Makes the shadow appear inside the element
+           - Multiple shadows can be comma-separated
+        */
         .box{
             background-color: aquamarine;
             width:var(--primary-width);
@@ -24,17 +34,43 @@
             border:1px solid var(--primary-color);
             margin: 5px;
             padding:5px;
+
+            /* Negative offsets — shadow goes left (-10px) and up (-60px) */
             /* box-shadow: -10px -60px var(--primary-color); */
+
+            /* Basic shadow — offset-x: 10px, offset-y: 10px, no blur, no spread */
             /* box-shadow: 10px 10px brown; */
+
+            /* With blur — offset-x: 10px, offset-y: 15px, blur-radius: 5px */
             /* box-shadow: 10px 15px 5px brown; */
+
+            /* With blur + spread — blur: 5px, spread: 20px (shadow expands 20px outward) */
             /* box-shadow: 10px 15px 5px 20px brown; */
+
+            /* Inset shadow — renders shadow inside the element (inner shadow effect) */
             /* box-shadow: inset 10px 15px brown; */
+
+            /* Multiple shadows — comma-separated; first shadow (red) renders on top */
             /* box-shadow: 10px 15px red, 15px 8px green; */
         }
+
+        /* ===== TEXT-SHADOW =====
+           Syntax: text-shadow: offset-x offset-y [blur-radius] [color];
+           - Similar to box-shadow but applies to text characters
+           - No spread-radius or inset option
+           - Color can be placed before or after the offset values
+        */
         #head1{
+            /* Full syntax — offset-x: 12px, offset-y: 13px, blur: 1px, color: white */
             /* text-shadow: 12px 13px 1px white; */
+
+            /* Color first — color can also be written before offsets */
             /* text-shadow: yellow 12px 13px 2px; */
+
+            /* Without blur — defaults to 0 (sharp shadow edge) */
             /* text-shadow: white 12px 13px; */
+
+            /* Without color — defaults to the element's current text color */
             text-shadow: 12px 13px;
         }
     </style>
