@@ -28,3 +28,31 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+.textBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 70%;
+    text-align:center;
+}
+#amountBox{
+    width: 80%;
+    height: 10%;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+#paymentButton{
+    width: 80%;
+    height: 9%;
+    background-color: rgb(22,22,79);
+    color:white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.cancelBox a{
+    text-decoration: none;
+    color: rgb(46, 43, 43);
+    font-weight: bold;
+    font-size: large;
+}
