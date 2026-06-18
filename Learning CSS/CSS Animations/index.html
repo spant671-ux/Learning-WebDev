@@ -1,105 +1,151 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animations</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        .container {
-            width: 100vw;
-            height: 100vh;
-            background-color: beige;
-            border: 5px solid black;
-        }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: beige;
+        border: 5px solid black;
+      }
 
-        .box {
-            width: 350px;
-            height: 80px;
-            background-color: blue;
-            border-radius: 10px;
-            margin: 10px;
-            position: relative;
-            border: 3px solid yellow;
-            /* animation-name: rightMovement; */
-            /* animation-duration: 5s; */
-            /* animation-iteration-count: 1; */
-            /* animation-delay: 1s; */
-            /* animation-timing-function: linear; */
-            /* animation-direction: alternate-reverse; */
-            /* animation-fill-mode: both; */
-            animation: 5s linear 1s infinite alternate none running rightMovement;
-        }
+      .box {
+        width: 350px;
+        height: 80px;
+        background-color: blue;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;
+        border: 3px solid yellow;
 
-        @keyframes rightMovement {
-            from {
-                top:0;
-                left:0;
-            }
-            to {
-                top:0;
-                left: 1200px;
-            }
+        /* Individual Animation Properties Explained: */
+        /* animation-name: Specifies the name of the @keyframes animation to apply. */
+        /* animation-name: rightMovement; */
+
+        /* animation-duration: Defines how long the animation cycle takes to complete. */
+        /* animation-duration: 5s; */
+
+        /* animation-iteration-count: Sets the number of times an animation cycle should play. */
+        /* animation-iteration-count: 1; */
+
+        /* animation-delay: Specifies a delay before the animation starts. */
+        /* animation-delay: 1s; */
+
+        /* animation-timing-function: Sets the speed curve (e.g., linear, ease-in, ease-out, ease-in-out). */
+        /* animation-timing-function: linear; */
+
+        /* animation-direction: Determines whether the animation plays forward, backward, or alternates. */
+        /* animation-direction: alternate-reverse; */
+
+        /* animation-fill-mode: Specifies style values applied by the animation outside its execution time. */
+        /* animation-fill-mode: both; */
+
+        /* Shorthand Property Order:
+           animation: [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state] [name] */
+        animation: 5s linear 1s infinite alternate none running rightMovement;
+      }
+
+      /* Keyframes define the intermediate steps in an animation sequence. */
+      /* 'from' (or 0%) is the start state, and 'to' (or 100%) is the end state. */
+      @keyframes rightMovement {
+        from {
+          top: 0;
+          left: 0;
         }
-        #box2{
-            width: 350px;
-            height: 80px;
-            background-color: blue;
-            border-radius: 10px;
-            margin: 10px;
-            position: relative;
-            border: 3px solid yellow;
-            animation: 5s ease-in 1s infinite alternate none running leftMovement;
+        to {
+          top: 0;
+          left: 1200px;
         }
-        @keyframes leftMovement {
-            from {
-                top:650px;
-                left:1200px;
-            }
-            to {
-                top:650px;
-                left: 0 ;
-            }
-        }
-        #circle{
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            border-radius: 50px;
-            margin: 10px;
-            position: relative;
-            border: 3px solid yellow;
-            top: 30%;
-            left: 40%;
-            animation: 5s ease-in 1s infinite alternate none running circleMovement;
-        }
-        @keyframes circleMovement{
-            from{
-                top: 650px;
-                left:1200px;
-            }
-            to{
-                top: 650px;
-                left:0;
-            }
-        }
+      }
+      #box2 {
+        width: 350px;
+        height: 80px;
+        background-color: blue;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;
+        border: 3px solid yellow;
         
+        /* Shorthand details:
+           - 5s: duration
+           - ease-in: starts slowly, then accelerates
+           - 1s: delay before starting
+           - infinite: plays indefinitely
+           - alternate: alternates direction (forward then backward)
+           - none: no fill mode
+           - running: animation is active
+           - leftMovement: name of keyframe rule */
+        animation: 5s ease-in 1s infinite alternate none running leftMovement;
+      }
+      @keyframes leftMovement {
+        from {
+          top: 650px;
+          left: 1200px;
+        }
+        to {
+          top: 650px;
+          left: 0;
+        }
+      }
+      #circle {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        border-radius: 50px;
+        margin: 10px;
+        position: relative;
+        border: 3px solid yellow;
+        top: 30%;
+        left: 40%;
+        
+        /* Shorthand details:
+           - 10s: duration
+           - ease-in-out: starts slowly, accelerates, then slows down at the end
+           - 0s: no start delay
+           - infinite: plays indefinitely
+           - alternate-reverse: plays backward first, then alternates
+           - none: no fill mode
+           - running: animation is active
+           - circleMovement: name of keyframe rule */
+        animation: 10s ease-in-out 0s infinite alternate-reverse none running
+          circleMovement;
+      }
+      /* Multi-step keyframes using percentages (0% to 100%) to control details at specific times of the animation duration. */
+      @keyframes circleMovement {
+        0% {   /* Start of the animation cycle */
+          top: 1%;
+          left: 5%;
+        }
+        30% {  /* 30% through the duration */
+          top: 5%; 
+          left: 90%;
+        }
+        60% {  /* 60% through the duration */
+          top: 70%;
+          left: 10%;
+        }
+        100% { /* End of the animation cycle */
+          top: 75%;
+          left: 60%;
+        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="box"></div>
-        <div id="circle"></div>
-        <div id="box2"></div>
-        
+      <div class="box"></div>
+      <div id="circle"></div>
+      <div id="box2"></div>
     </div>
-</body>
-
+  </body>
 </html>
