@@ -27,13 +27,14 @@
             margin: 10px;
             position: relative;
             border: 3px solid yellow;
-            animation-name: rightMovement;
-            animation-duration: 5s;
-            animation-iteration-count: 1;
+            /* animation-name: rightMovement; */
+            /* animation-duration: 5s; */
+            /* animation-iteration-count: 1; */
             /* animation-delay: 1s; */
-            animation-timing-function: linear;
+            /* animation-timing-function: linear; */
             /* animation-direction: alternate-reverse; */
-            animation-fill-mode: both;
+            /* animation-fill-mode: both; */
+            animation: 5s linear 1s infinite alternate none running rightMovement;
         }
 
         @keyframes rightMovement {
@@ -46,12 +47,58 @@
                 left: 1200px;
             }
         }
+        #box2{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: 3px solid yellow;
+            animation: 5s ease-in 1s infinite alternate none running leftMovement;
+        }
+        @keyframes leftMovement {
+            from {
+                top:650px;
+                left:1200px;
+            }
+            to {
+                top:650px;
+                left: 0 ;
+            }
+        }
+        #circle{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50px;
+            margin: 10px;
+            position: relative;
+            border: 3px solid yellow;
+            top: 30%;
+            left: 40%;
+            animation: 5s ease-in 1s infinite alternate none running circleMovement;
+        }
+        @keyframes circleMovement{
+            from{
+                top: 650px;
+                left:1200px;
+            }
+            to{
+                top: 650px;
+                left:0;
+            }
+        }
+        
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="box"></div>
+        <div id="circle"></div>
+        <div id="box2"></div>
+        
     </div>
 </body>
 
