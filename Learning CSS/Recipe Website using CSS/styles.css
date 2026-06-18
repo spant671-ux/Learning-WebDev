@@ -67,3 +67,10 @@ a{
     color: azure;
     font-size: 2rem;
 }
+
+.contentBox{
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: white;
+}
