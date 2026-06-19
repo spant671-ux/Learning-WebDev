@@ -14,12 +14,14 @@ body{
     height: 100%;
     background-color: rgb(69,62,62);
     display: grid;
-    gap: 1rem;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.4rem;
 }
 
 .item{
     height: 100px;
     width: 100px;
-    background-color:rgb(32, 109, 109);
+    background-color:rgb(49, 206, 14);
     border: 5px solid rgb(217, 202, 202);
-}
+} 
