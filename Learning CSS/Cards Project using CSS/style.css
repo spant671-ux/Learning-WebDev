@@ -1,9 +1,12 @@
-*{
+/* Reset margins, paddings, and set box sizing to border-box for consistent element sizing */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+/* Centering the card vertically and horizontally on the viewport using Flexbox */
+.container {
     width: 100vw;
     height: 100vh;
     background-color: #8bc6ec;
@@ -12,7 +15,9 @@
     justify-content: center;
     align-items: center;
 }
-.card{
+
+/* Main card styling with vertical Flexbox layout */
+.card {
     width: 400px;
     height: 600px;
     background-color: white;
@@ -20,23 +25,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:25px;
+    gap: 25px;
 }
-.card img{
+
+/* Card header image styling (affects nested images within the card, except where overridden) */
+.card img {
     width: 100%;
     height: 30%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.textBox{
+
+/* Text box for the order summary title and description */
+.textBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     width: 70%;
-    text-align:center;
+    text-align: center;
 }
-#amountBox{
+
+/* Plan details container (displays music icon, pricing, and change button) */
+#amountBox {
     width: 80%;
     height: 10%;
     background-color: blanchedalmond;
@@ -47,32 +58,41 @@
     padding-right: 20px;
     padding-left: 20px;
 }
-#paymentButton{
+
+/* Payment button styling with shadow */
+#paymentButton {
     width: 80%;
     height: 9%;
-    background-color: rgb(22,22,79);
-    color:white;
+    background-color: rgb(22, 22, 79);
+    color: white;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-.cancelBox a{
+
+/* Cancel order link styling */
+.cancelBox a {
     text-decoration: none;
     color: rgb(46, 43, 43);
     font-weight: bold;
     font-size: large;
 }
-#leftBox{
+
+/* Left side of the plan details box, grouping the music icon and text horizontally */
+#leftBox {
     display: flex;
-    gap:15px;
+    gap: 15px;
     height: 100%;
     align-items: center;
-
 }
-#imgBox{
+
+/* Container for the music icon */
+#imgBox {
     height: 3.5rem;
     width: 3.5rem;
 }
-#imgBox img{
+
+/* Specific overrides for the music icon image to prevent distortion and remove border-radius inherited from .card img */
+#imgBox img {
     width: 100%;
     height: 100%;
     border-radius: 0;

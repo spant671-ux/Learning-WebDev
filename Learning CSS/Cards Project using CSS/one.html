@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Card</title>
+    <!-- Link to external stylesheet containing all styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-
+    <!-- Main screen-sized container for alignment -->
     <div class="container">
+        <!-- Card wrapper -->
         <div class="card">
+            <!-- Card main banner image -->
             <img src="icon.jpg">
+            
+            <!-- Card text section (Title and description) -->
             <div class="textBox">
                 <h2>Order Summary</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ipsum molestiae soluta. Eos fuga corrupti officia blanditiis dicta repellendus magnam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ipsum molestiae soluta. Eos fuga corrupti officia blanditiis dicta repellendus magnam!</p>
             </div>
+            
+            <!-- Plan and pricing box -->
             <div id="amountBox">
+                <!-- Left half: Icon & plan/pricing info -->
                 <div id="leftBox">
                     <div id="imgBox">
                         <img src="music.png"/>
@@ -25,24 +33,24 @@
                         <p>Amount</p>
                         <p>$99.9/year</p>
                     </div>
-
                 </div>
+                <!-- Right half: Action link to change plan -->
                 <div id="rightBox">
                     <a href="#">Change</a>
                 </div>
-
             </div>
 
+            <!-- Primary payment button -->
             <button id="paymentButton">
                 Proceed to pay
             </button>
 
+            <!-- Secondary cancel button -->
             <div class="cancelBox">
                 <a href="#">Cancel Order</a>
             </div>
         </div>
     </div>
-
 
 </body>
 </html>
