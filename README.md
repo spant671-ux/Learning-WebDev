@@ -40,14 +40,59 @@ Learning-WebDev/
 │       ├── image.jpg
 │       ├── index.html
 │       └── video.mp4
-└── Learning CSS/
-    ├── Box Model/
-    │   └── index.htm
-    ├── Inline, Internal and External Stylesheets/
+├── Learning CSS/
+│   ├── 2D Transforms/
+│   │   ├── index.htm
+│   │   └── style.css
+│   ├── Box Model/
+│   │   └── index.htm
+│   ├── CSS Animations/
+│   │   └── index.html
+│   ├── CSS Display Properties/
+│   │   └── index.htm
+│   ├── CSS Grids/
+│   │   ├── grid.html
+│   │   ├── index.htm
+│   │   ├── style.css
+│   │   └── styles.css
+│   ├── CSS Position Properties/
+│   │   ├── index.html
+│   │   └── [images]
+│   ├── Flexbox/
+│   │   └── index.html
+│   ├── Float, Clear and Overflow/
+│   │   ├── index.htm
+│   │   ├── one.htm
+│   │   └── two.htm
+│   ├── Inline, Internal and External Stylesheets/
+│   │   ├── index.html
+│   │   └── style.css
+│   ├── Media Queries and Custom Variables/
+│   │   ├── index.html
+│   │   ├── one.html
+│   │   └── two.html
+│   ├── Shadow Effects/
+│   │   └── index.html
+│   ├── Size Units in Depth/
+│   │   └── index.htm
+│   ├── Transition Effects/
+│   │   └── index.htm
+│   └── Typography/
+│       └── index.html
+└── Projects/
+    ├── Blogs Website Project using HTML, CSS/
+    │   ├── index.htm
+    │   └── styles.css
+    ├── Calculator using HTML, CSS and JS/
     │   ├── index.html
+    │   ├── script.js
+    │   └── styles.css
+    ├── Cards Project using HTML, CSS/
+    │   ├── index.htm
     │   └── style.css
-    └── Typography/
-        └── index.html
+    └── Recipe Website using HTML, CSS/
+        ├── index.htm
+        └── styles.css
 ```
 
 ---
@@ -73,18 +118,29 @@ Learning-WebDev/
 
 ### 2. 🎨 CSS Fundamentals (`/Learning CSS`)
 
-*   **Inline, Internal and External Stylesheets**: Comparing the three approaches to styling web pages, and demonstrating fundamental CSS selector systems:
-    *   Element Selectors (`p`)
-    *   ID Selectors (`#article1`)
-    *   Class Selectors (`.paraClass`)
-    *   Grouping Selectors (`p, article`)
-    *   Specificity / Chained Selectors (`p.paraClass`)
-*   **Box Model**: Working with the layout engine's spacing properties—`width`, `height`, `border` (with thickness, style, color, and curved corners using `border-radius`), `padding`, and `margin`.
-*   **Typography**: Styling text using `font-family` (system/fallback stacks), `font-size`, `font-weight`, and `line-height`. Explores standard CSS color models:
-    *   Named colors (e.g., `yellow`)
-    *   RGB & RGBA (Red, Green, Blue, Alpha transparency)
-    *   Hexadecimal codes (e.g., `#e12985`)
-    *   HSL (Hue, Saturation, Lightness)
+*   **Inline, Internal and External Stylesheets**: Comparing the three approaches to styling web pages, and demonstrating fundamental CSS selector systems (Element, ID, Class, Grouping, Chained).
+*   **Box Model**: Spacing properties—`width`, `height`, `border` (with `border-radius`), `padding`, and `margin`.
+*   **Typography**: Styling text using `font-family`, `font-size`, `font-weight`, `line-height`, and CSS color models (Named, RGB, RGBA, Hex, HSL).
+*   **CSS Display Properties**: Controlling layout behavior with `block`, `inline`, `inline-block`, and `none`.
+*   **CSS Position Properties**: Positioning elements via `static`, `relative`, `absolute`, `fixed`, and `sticky`.
+*   **Float, Clear and Overflow**: Aligning elements using float properties, clearing floats, and handling text/content overflow.
+*   **Flexbox**: Building flexible, modern responsive structures using Flexbox container and item alignments.
+*   **CSS Grids**: Designing advanced two-dimensional layout grids, template columns/rows, alignment, and positioning.
+*   **Size Units in Depth**: Understanding relative and absolute length units including `px`, `%`, `em`, `rem`, `vw`, and `vh`.
+*   **Media Queries and Custom Variables**: Declaring CSS custom properties (variables) and applying fluid layout styling responsively using `@media` queries.
+*   **Shadow Effects**: Adding text shadows (`text-shadow`) and box shadows (`box-shadow`) to pages.
+*   **2D Transforms**: Applying scaling, rotation, translation, and skewing via the `transform` property.
+*   **Transition Effects**: Styling smooth hover and state animations using transition durations, delays, and timing functions.
+*   **CSS Animations**: Creating rich, customized multi-step keyframe animations.
+
+---
+
+### 3. 🚀 Projects (`/Projects`)
+
+*   **Blogs Website Project using HTML, CSS**: A responsive blog website layout featuring a grid of blog cards with images, titles, descriptions, and author information. Built with semantic HTML and modern CSS Grid/Flexbox.
+*   **Recipe Website using HTML, CSS**: A structured recipe page showcasing ingredients, instructions, and images.
+*   **Cards Project using HTML, CSS**: A collection of stylized cards for displaying content.
+*   **Calculator using HTML, CSS and JS**: A functional calculator application with an interactive UI and basic mathematical calculations handled via JavaScript.
 
 ---
 
@@ -101,6 +157,5 @@ Learning-WebDev/
 
 ## 🚀 Learning Progress
 
-*   **Completed:** HTML Basics
-*   **Currently Learning:** CSS Fundamentals 🎨
-*   **Up Next:** JavaScript Basics ⚡
+*   **Completed:** HTML Basics & CSS Fundamentals 🎨
+*   **Currently Learning:** JavaScript Basics ⚡
