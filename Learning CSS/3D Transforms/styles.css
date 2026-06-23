@@ -49,4 +49,14 @@ body{
     transform: perspective(300px) translateZ(100px);
 }
 
-#scaleX
+#scaleX:hover{
+    transform: scaleX(1.5);
+}
+
+#scaleY:hover{
+    transform: scaleY(1.5);
+}
+
+#scaleZ:hover{
+    transform: perspective(300px) scaleZ(5) rotateY(30deg);
+}
