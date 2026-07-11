@@ -486,3 +486,18 @@ body{
      object-fit: cover;
      object-position: center;
 }
+
+.news-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.news-title{
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
