@@ -571,7 +571,7 @@ body{
     color: #2563eb;
 }
 
-.footer_container{
+.footer-container{
     background-color: var(--background-color);
     margin: 0 auto;
     padding: 0 2rem;
@@ -589,5 +589,27 @@ body{
 }
 
 .footer-top{
-    
+    width: 34%;
+}
+
+.logo-svg{
+    width: 2rem;
+    height: 6rem;
+}
+
+.social-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.comp-logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
 }
