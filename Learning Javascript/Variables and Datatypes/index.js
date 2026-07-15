@@ -20,7 +20,19 @@
 // let a = 10;
 // let a = 20; 
 
-const a = 28;
-console.log(a);
-a=20;
-console.log(a);
+// const a = 28;
+// console.log(a);
+// a=20;
+// console.log(a);
+
+let marks= 20;
+console.log(marks);
+
+let name= "Kanye";
+console.log(name);
+
+let bye;
+console.log(bye);
+
+let value = null;
+console.log(value);
