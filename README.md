@@ -90,8 +90,12 @@ Learning-WebDev/
     ├── Cards Project using HTML, CSS/
     │   ├── index.htm
     │   └── style.css
-    └── Recipe Website using HTML, CSS/
-        ├── index.htm
+    ├── Recipe Website using HTML, CSS/
+    │   ├── index.htm
+    │   └── styles.css
+    └── StudySync/
+        ├── images/
+        ├── index.html
         └── styles.css
 ```
 
@@ -141,6 +145,7 @@ Learning-WebDev/
 *   **Recipe Website using HTML, CSS**: A structured recipe page showcasing ingredients, instructions, and images.
 *   **Cards Project using HTML, CSS**: A collection of stylized cards for displaying content.
 *   **Calculator using HTML, CSS and JS**: A functional calculator application with an interactive UI and basic mathematical calculations handled via JavaScript.
+*   **StudySync**: A fully responsive landing page for a seamless learning platform. Built using semantic HTML5 and vanilla CSS. Responsiveness is achieved purely through custom variables, CSS Flexbox, CSS Grid, and custom media queries.
 
 ---
 
