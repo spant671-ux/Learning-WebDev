@@ -36,3 +36,9 @@ console.log(bye);
 
 let value = null;
 console.log(value);
+
+let grades= 3737957937959292949299219974979294927977979279797593929182997579729792;
+console.log(grades);
+
+marks = false;
+console.log(typeof(marks));
