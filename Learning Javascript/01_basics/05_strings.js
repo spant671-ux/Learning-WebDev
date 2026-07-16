@@ -14,6 +14,8 @@ const gameName = new String('mikey-sp')
 // console.log(gameName.toUpperCase()) //MIKEY
 console.log(gameName.charAt(2)) //k
 console.log(gameName.indexOf('e')) //3
+console.log(gameName.split('-')) //[ 'mikey', 'sp' ]
+
 
 const newString = gameName.substring(0, 4)
 console.log(newString) //mike
@@ -24,6 +26,11 @@ console.log(anotherString) //ike
 const newStringOne = "    sans    "
 console.log(newStringOne) //    sans
 console.log(newStringOne.trim()); //sans
+
+const url= "https://sans.com/sans%20mikey"
+console.log(url.replace('%20', '-')) //https://sans.com/sans-mikey
+console.log(url.includes('sans'))
+
 
 
 
