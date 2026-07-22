@@ -65,19 +65,33 @@ const users = [
 
 // Accessing an object inside an array by index and then targeting its property:
 users[1].email
-console.log(tinderUser)
+// console.log(tinderUser)
 
 
 // ==================== Object Class Utility Methods ====================
 
 // Object.keys(obj): Returns an array containing all property key names of the object
-console.log(Object.keys(tinderUser)) // Output: ['id', 'name', 'isLoggedIn']
+// console.log(Object.keys(tinderUser)) // Output: ['id', 'name', 'isLoggedIn']
 
 // Object.values(obj): Returns an array containing all property values of the object
-console.log(Object.values(tinderUser)) // Output: ['123abc', 'Sammie', false]
+// console.log(Object.values(tinderUser)) // Output: ['123abc', 'Sammie', false]
 
 // Object.entries(obj): Returns an array of key-value pairs formatted as [key, value] arrays
-console.log(Object.entries(tinderUser))
+// console.log(Object.entries(tinderUser))
 
 // hasOwnProperty(propName): Returns boolean indicating whether object has specified property directly
-console.log(tinderUser.hasOwnProperty('isLoggedIn')) // Output: true
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')) // Output: true
+
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+console.log(instructor) 
+
+
