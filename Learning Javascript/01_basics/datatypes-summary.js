@@ -77,7 +77,7 @@ Return type of variables in JavaScript:
 */
 
 
-// ==================== Memory Allocation in JS ====================
+// ==================== Memory Allocation in JS ==================== 
 
 /*
 There are two types of memory: Stack and Heap.
