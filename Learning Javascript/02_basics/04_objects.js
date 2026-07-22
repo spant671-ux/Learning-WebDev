@@ -83,15 +83,37 @@ users[1].email
 // console.log(tinderUser.hasOwnProperty('isLoggedIn')) // Output: true
 
 
+// ==================== Object Destructuring & Renaming ====================
+
 const course = {
     coursename: "js in hindi",
     price: "999",
     courseInstructor: "hitesh"
 }
 
+// Accessing property standard way:
 // course.courseInstructor
 
+// Object Destructuring: Unpacking properties directly into variables.
+// Renaming / Aliasing syntax: { originalProperty: newVariableName }
 const {courseInstructor: instructor} = course
-console.log(instructor) 
+console.log(instructor) // Output: hitesh
 
 
+// ==================== JSON & API Response Structures ====================
+
+// JSON (JavaScript Object Notation): A lightweight text-based format for data exchange.
+// Key Difference from JS Objects: In JSON, all keys and string values MUST be enclosed in double quotes ("").
+// Example JSON object representation:
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }   
+
+// APIs can also return data as an Array of JSON Objects:
+[
+    {},
+    {},
+    {}
+]
