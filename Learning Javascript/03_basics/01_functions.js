@@ -17,5 +17,15 @@ function addTwoNumbers(number1, number2){
     return number1+number2
     console.log("Hello") // wont print
 }
+
 const result = addTwoNumbers(3, 5) //8 //arguments
-console.log("Result:", result)
+// console.log("Result:", result)
+
+function loginUserMessage(username){
+    if(!username){
+        console.log("Please enter a username")
+    }
+    return `${username} just logged in`
+}
+
+console.log(loginUserMessage())
