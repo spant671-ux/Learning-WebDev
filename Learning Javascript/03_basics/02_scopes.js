@@ -18,7 +18,7 @@ if (true) {
 
     // Variable Shadowing: The block-scoped 'a' shadows the global 'a' inside this block.
     // Expected Output: Inner: 10
-    console.log("Inner:", a);
+    // console.log("Inner:", a);
 }
 
 // Block Scope in loops:
@@ -29,7 +29,7 @@ if (true) {
 
 // Printing global 'a' (retains its global value 300, unaffected by the inner 'a = 10'):
 // Expected Output: 300
-console.log(a);
+// console.log(a);
 
 // Accessing 'b' outside the block throws a ReferenceError: b is not defined (because 'const' is block-scoped):
 // console.log(b);
@@ -42,4 +42,41 @@ console.log(a);
 // Note on Global Scope Environments:
 // The Global Scope behavior varies depending on the runtime environment:
 // 1. In Browser Developer Console: The global scope object is 'window'.
-// 2. In Node.js environment: The top-level scope is the Node module scope / 'global' object.
+// 2. In Node.js environment: The top-level scope is the Node module scope / 'global' object.
+
+function one(){
+    const username = "sans"
+
+    function two(){
+        const website = "youtube"
+        console.log(username)
+    }
+    // console.log(website)
+    two()  
+}
+// one()
+
+if(true){
+    const username = "sans"
+    if(username == "sans"){
+        const website = " youtube"
+        // console.log(username+website)
+    }
+    // console.log(website)
+}
+// console.log(username)
+
+//-------------- Interesting ---------------
+
+console.log(addOne(5))
+
+function addOne(num){
+    return num+1
+}
+
+addTwo
+const addTwo = function(num){
+    return num +2
+}
+
+ 
