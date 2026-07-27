@@ -64,12 +64,23 @@ const chai = () => {
 
 // ==================== Arrow Function Syntaxes (Explicit vs. Implicit Return) ====================
 
+// 1. Explicit Return: When using curly braces {}, the 'return' keyword is MANDATORY.
 // const addTwo = (num1, num2) => {
-//     return num1 + num2
-// }
+//     return num1 + num2;
+// };
 
-const addTwo = (num1, num2) =>  num1 + num2
+// 2. Implicit Return (One-liner): Omit braces and 'return' keyword to return the value automatically.
+// const addTwo = (num1, num2) => num1 + num2;
+
+// 3. Implicit Return (Parentheses): Parentheses () wrap the expression and do NOT require 'return'.
+// const addTwo = (num1, num2) => ( num1 + num2 );
+
+// 4. Implicit Object Return: Object literals MUST be wrapped in parentheses ({ ... }) to return implicitly.
+// Without parentheses (), JS interprets curly braces as a function body block rather than an object literal.
+const addTwo = (num1, num2) => ({ username: "sans" });
+
+// Invoking addTwo(5, 8) returns the implicitly wrapped object:
+// Expected Output: { username: 'sans' }
+console.log(addTwo(5, 8));
+
     
-
-
-console.log(addTwo(5, 8))
