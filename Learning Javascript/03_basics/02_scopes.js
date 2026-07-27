@@ -15,3 +15,5 @@ for (let i = 0; i < array.length; i++) {
 console.log(a)
 // console.log(b)
 // console.log(c)
+
+//global scope different in browser console, different in code editor node
