@@ -44,39 +44,77 @@ if (true) {
 // 1. In Browser Developer Console: The global scope object is 'window'.
 // 2. In Node.js environment: The top-level scope is the Node module scope / 'global' object.
 
+// ==================== Nested Scope & Lexical Scoping ====================
+
+// Lexical Scoping: Inner functions have access to variables declared in their outer parent scope.
+// However, parent functions CANNOT access variables declared inside child functions.
 function one(){
-    const username = "sans"
+    const username = "sans";
 
     function two(){
-        const website = "youtube"
-        console.log(username)
+        const website = "youtube";
+
+        // Inner function 'two' can access 'username' from outer parent scope:
+        // Expected Output: "sans"
+        console.log(username);
     }
-    // console.log(website)
-    two()  
-}
-// one()
 
-if(true){
-    const username = "sans"
-    if(username == "sans"){
-        const website = " youtube"
-        // console.log(username+website)
+    // Parent function 'one' CANNOT access 'website' (scoped strictly inside 'two'):
+    // ReferenceError: website is not defined
+    // console.log(website);
+
+    two();  
+}
+// one();
+
+// Nested Block Scope with 'if' statements:
+if (true) {
+    const username = "sans";
+
+    if (username === "sans") {
+        const website = " youtube";
+
+        // Inner if-block can access both 'username' (outer) and 'website' (inner):
+        // Expected Output: "sans youtube"
+        // console.log(username + website);
     }
-    // console.log(website)
+
+    // Outer if-block CANNOT access 'website' (scoped strictly inside the inner if-block):
+    // ReferenceError: website is not defined
+    // console.log(website);
 }
-// console.log(username)
 
-//-------------- Interesting ---------------
+// Global scope CANNOT access 'username' (scoped strictly inside the if-block):
+// ReferenceError: username is not defined
+// console.log(username);
 
-console.log(addOne(5))
+
+// ==================== Hoisting: Function Declarations vs. Expressions ====================
+
+// 1. Function Declaration Hoisting:
+// Standard function declarations are hoisted to the top of their scope during parsing.
+// Therefore, they CAN be invoked BEFORE their actual definition in the code.
+// Expected Output: 6
+console.log(addOne(5));
 
 function addOne(num){
-    return num+1
+    return num + 1;
 }
 
-addTwo
+// 2. Function Expression Hoisting:
+// Holding a function inside a variable ('const' or 'let') creates a Function Expression.
+// Calling a function expression BEFORE its initialization throws a ReferenceError due to the Temporal Dead Zone (TDZ).
+
+// ReferenceError: Cannot access 'addTwo' before initialization
+// addTwo(5);
+
 const addTwo = function(num){
-    return num +2
-}
+    return num + 2;
+};
+
+// Calling function expression after definition:
+// Expected Output: 7
+// console.log(addTwo(5));
+
 
  
