@@ -64,24 +64,47 @@ function calculateCartPrice(...num1){
 // Expected Output: [ 300, 400, 500 ]
 // console.log(calculateCartPrice(300, 400, 500));
 
+
+// ==================== Passing Objects to Functions ====================
+
+// Define a sample object with username and price properties:
 const user = {
     username: "sans",
     price: 199
+};
+
+// Function that accepts any object parameter and accesses its properties using dot notation:
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
 }
 
-function handleObject(anyObject){
-    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`)
-}
-// handleObject(user)
+// Invoking handleObject by passing a pre-defined object variable:
+// Expected Output: "Username is sans and price is 199"
+// handleObject(user);
+
+// Invoking handleObject directly by passing an inline object literal:
+// Expected Output: "Username is sam and price is 399"
 handleObject({
     username: "sam",
     price: 399
-})
+});
 
-const myNewArray = [200, 400, 100, 600]
 
+// ==================== Passing Arrays to Functions ====================
+
+// Define a sample array:
+const myNewArray = [200, 400, 100, 600];
+
+// Function that accepts an array parameter and returns an element at a specific index (index 3):
 function returnSecondValue(getArray){
-    return getArray[3]
+    return getArray[3];
 }
-// console.log(returnSecondValue(myNewArray))
-console.log(returnSecondValue([100, 200, 300, 400]))
+
+// Invoking function by passing a pre-defined array variable:
+// Expected Output: 600 (element at index 3)
+// console.log(returnSecondValue(myNewArray));
+
+// Invoking function directly by passing an inline array argument:
+// Expected Output: 400 (element at index 3 of [100, 200, 300, 400])
+console.log(returnSecondValue([100, 200, 300, 400]));
+
