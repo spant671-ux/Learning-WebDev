@@ -36,6 +36,7 @@ const obj4 = {5: "a", 6: "b"}
 // Note: {obj1, obj2} nests objects inside a new object rather than merging their properties.
 // const obj3 = {obj1, obj2}
 
+
 // Object.assign(target, ...sources): Merges source objects into target.
 // Using empty object {} as target prevents mutating obj1.
 // const obj3 = Object.assign({}, obj1, obj2, obj4)
@@ -54,18 +55,17 @@ const users = [
         email: "s@gmail.com",
     },
     {
-        id: 1,
-        email: "s@gmail.com",
+        id: 2,
+        email: "p@gmail.com",
     },
     {
-        id: 1,
-        email: "s@gmail.com",
+        id: 3,
+        email: "q@gmail.com",
     }
 ]
 
 // Accessing an object inside an array by index and then targeting its property:
 users[1].email
-// console.log(tinderUser)
 
 
 // ==================== Object Class Utility Methods ====================
