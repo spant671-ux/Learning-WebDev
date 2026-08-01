@@ -90,13 +90,30 @@ Learning-WebDev/
 │   └── 16_css_animations/
 │       └── index.html
 ├── Learning Javascript/
-│   └── 01_basics/
-│       ├── 01_variables.js
-│       ├── 02_datatypes.js
-│       ├── 03_conversionOperation.js
-│       ├── 04_comparison.js
-│       ├── 05_strings.js
-│       └── datatypes-summary.js
+│   ├── 01_basics/
+│   │   ├── 01_variables.js
+│   │   ├── 02_datatypes.js
+│   │   ├── 03_conversionOperation.js
+│   │   ├── 04_comparison.js
+│   │   ├── 05_strings.js
+│   │   ├── 06_nums_and_maths.js
+│   │   ├── 07_datesInJs.js
+│   │   └── datatypes-summary.js
+│   ├── 02_basics/
+│   │   ├── 01_arrays.js
+│   │   ├── 02_arrays.js
+│   │   ├── 03_objects.js
+│   │   └── 04_objects.js
+│   ├── 03_basics/
+│   │   ├── 01_functions.js
+│   │   ├── 02_scopes.js
+│   │   ├── 03_arrow.js
+│   │   ├── 04_iife.js
+│   │   └── exec_context.js
+│   └── 04_control_flow/
+│       ├── ifelse.js
+│       ├── switch.js
+│       └── truthy.js
 └── Projects/
     ├── Blogs Website Project using HTML, CSS/
     │   ├── index.htm
@@ -159,15 +176,32 @@ Learning-WebDev/
 
 ---
 
-### 3. ⚡ JavaScript Basics (`/Learning Javascript`)
+### 3. ⚡ JavaScript Core (`/Learning Javascript`)
 
 *   **01_basics**: Fundamentals of JavaScript:
-    *   *01_variables.js*: Variable declarations using `const`, `let`, and `var`.
-    *   *02_datatypes.js*: Primitive and non-primitive data types.
-    *   *03_conversionOperation.js*: Dynamic type conversions and operators.
-    *   *04_comparison.js*: Comparison operators and strict equality.
-    *   *05_strings.js*: String manipulation, interpolation, and properties.
-    *   *datatypes-summary.js*: In-depth reference on data type storage and memory allocation.
+    *   *01_variables.js*: Declaration keywords (`const`, `let`, `var`), scope leaking, and `console.table()`.
+    *   *02_datatypes.js*: Primitive types, reference types, strict mode `"use strict"`, and `typeof` quirks.
+    *   *03_conversionOperation.js*: Type conversions (`Number()`, `Boolean()`, `String()`), type coercion, unary plus, and increment operators.
+    *   *04_comparison.js*: Loose (`==`) vs. strict (`===`) equality and `null`/`undefined` comparison quirks.
+    *   *05_strings.js*: Template literals (string interpolation), string objects, and string methods (`slice`, `substring`, `trim`, `replace`, `includes`).
+    *   *06_nums_and_maths.js*: Number formatting (`toFixed`, `toPrecision`, `toLocaleString`) and `Math` object functions (`Math.random`, min/max formulas).
+    *   *07_datesInJs.js*: Date instantiation, formatting methods, 0-indexed months, and timestamps (`Date.now()`).
+    *   *datatypes-summary.js*: Comprehensive reference on Stack vs. Heap memory allocation.
+*   **02_basics**: Arrays and Objects in depth:
+    *   *01_arrays.js*: Array methods (`push`, `pop`, `unshift`, `shift`, `includes`, `indexOf`, `join`, `slice`, `splice`).
+    *   *02_arrays.js*: Advanced array operations (`concat`, spread operator `...`, `flat()`, `Array.from()`, `Array.of()`).
+    *   *03_objects.js*: Object literals, Symbol keys, accessing properties, freezing objects (`Object.freeze()`), and method declaration.
+    *   *04_objects.js*: Singleton objects, nested objects, `Object.assign()`, spread operator for objects, `Object.keys()`, `Object.values()`, `Object.entries()`, destructuring, and JSON overview.
+*   **03_basics**: Functions, Scopes, and Execution:
+    *   *01_functions.js*: Function declarations, parameters vs. arguments, return values, default/falsy checks, rest operator (`...`), and passing objects/arrays to functions.
+    *   *02_scopes.js*: Global vs. block scope (`let`, `const`, `var`), variable shadowing, lexical scoping in nested functions, and function declaration vs. expression hoisting.
+    *   *03_arrow.js*: `this` keyword context in objects vs. functions, global `this` in Node vs. Browser, arrow function syntaxes, explicit returns, implicit returns, and returning objects `({ ... })`.
+    *   *04_iife.js*: Immediately Invoked Function Expressions (IIFE), named vs. unnamed/arrow IIFEs, parameters, preventing global scope pollution, and mandatory semicolons `;`.
+    *   *exec_context.js*: Step-by-step breakdown of JavaScript Execution Context (Global Execution Context, Function Execution Context), Memory Creation Phase, Execution Phase, and Call Stack (LIFO principle).
+*   **04_control_flow**: Control Flow & Logic:
+    *   *ifelse.js*: Conditional branching (`if`, `else if`, `else`), block scope in conditionals, implicit scope, comparison operators, and logical operators (`&&`, `||`).
+    *   *switch.js*: Switch statement syntax, strict key matching, `break` keyword, preventing fall-through, and `default` cases.
+    *   *truthy.js*: Truthy vs. Falsy values, verifying empty arrays (`.length === 0`) and empty objects (`Object.keys().length === 0`), Nullish Coalescing Operator (`??`), and Ternary Operator (`? :`).
 
 ---
 
@@ -188,11 +222,14 @@ Learning-WebDev/
    git clone https://github.com/spant671-ux/Learning-WebDev.git
    ```
 2. **Open the files:**
-   Since this is a client-side learning project, you don't need to run a server. Simply locate any `.html` file on your filesystem and double-click to open it in your browser of choice.
+   Since this is a client-side learning project, you don't need to run a server. Simply locate any `.html` file or `.js` file on your filesystem. You can open HTML files in your browser or run JavaScript files using Node.js:
+   ```bash
+   node "Learning Javascript/03_basics/01_functions.js"
+   ```
 
 ---
 
 ## 🚀 Learning Progress
 
-*   **Completed:** HTML Basics & CSS Fundamentals 🎨
-*   **Currently Learning:** JavaScript Basics ⚡
+*   **Completed:** HTML Basics 🏗️ & CSS Fundamentals 🎨
+*   **Currently Learning:** JavaScript Fundamentals & Control Flow ⚡
