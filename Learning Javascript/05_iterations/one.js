@@ -11,7 +11,10 @@ for (let i = 0; i < 10; i++) {
 // console.log(element);
 
 for (let i = 0; i <= 10; i++) {
-    for(let j = 0; j <= 10; j++){
+    console.log(`Outer Loop Value: ${i}`)
+    for(let j = 1; j <= 10; j++){
+        // console.log(`Inner Loop Value: ${j} and Outer Loop Value: ${i}`)
+        console.log(i + ' x ' + j +  ' = ' + i*j);
         
     }
 }
