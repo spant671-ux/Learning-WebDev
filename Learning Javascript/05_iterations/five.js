@@ -54,5 +54,5 @@ const myCoding = [
 // Accessing object properties inside forEach callback:
 myCoding.forEach( (item) => {
     // Expected Output: "javascript", "java", "python"
-    console.log(item.languageName);
-});
+    // console.log(item.languageName);
+});

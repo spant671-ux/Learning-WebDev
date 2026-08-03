@@ -57,4 +57,4 @@ const myObj = {
 
 // Note: Plain objects are NOT iterable using for...of loops.
 // Attempting 'for (const [key, value] of myObj)' will throw a TypeError: myObj is not iterable.
-// Use 'for...in' (see four.js) or 'Object.entries(myObj)' to iterate over object entries.
+// Use 'for...in' (see four.js) or 'Object.entries(myObj)' to iterate over object entries.
