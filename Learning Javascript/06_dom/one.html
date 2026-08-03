@@ -1,53 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Learning</title>
+   <meta charset="UTF-8">
+   <title>DOM Learning</title>
+   <style>
+      .bg-black{
+         background-color: #212121;
+         color: #fff;
+      }
+   </style>
 </head>
-<body style="background-color: #212121; color: #fff;">
-
-    <!-- 
-      ==================== DOM (Document Object Model) Basics ====================
-      - The DOM represents the HTML document as a tree structure of nodes (Element, Text, Attribute, Comment nodes).
-      - Top-level Hierarchy: window -> document -> document.documentElement (<html>) -> head / body.
-    -->
-
-    <div class="bg-black">
-        <!-- Element Node: <h1> heading with id and class attributes -->
-        <h1 id="title" class="heading">DOM Learning <span style="display: none;">test text</span></h1>
-        
-        <!-- Element Node: <p> paragraph tag -->
-        <p>Lorem ipsum dolor sit amet.</p>
-    </div>
-
-    <!-- 
-      ==================== DOM Manipulation & Selector Quick Reference ====================
-      
-      1. Element Selection Methods:
-         - document.getElementById('title')           : Selects single element by unique ID.
-         - document.getElementsByClassName('heading') : Returns an HTMLCollection of matching elements.
-         - document.querySelector('#title')           : Returns FIRST element matching CSS selector.
-         - document.querySelectorAll('p')             : Returns a NodeList of ALL matching elements.
-
-      2. Text Content Properties Comparison:
-         - innerText   : Returns ONLY visible text content (respects CSS 'display: none').
-         - textContent : Returns ALL text content inside node (includes hidden text like 'display: none').
-         - innerHTML   : Returns full HTML markup inside element (includes child HTML tags like <span>).
-
-      3. Attribute Manipulation Methods:
-         - title.getAttribute('class')                : Reads attribute value (e.g., "heading").
-         - title.setAttribute('class', 'heading test'): Sets/overwrites attribute value.
-
-      4. Inline Style Manipulation via JS:
-         - title.style.backgroundColor = 'green'
-         - title.style.padding = '15px'
-         - title.style.borderRadius = '10px'
-
-      5. Collection Differences (HTMLCollection vs. NodeList):
-         - HTMLCollection : Live collection. Does NOT support .forEach() directly (convert via Array.from()).
-         - NodeList       : Static collection. Supports .forEach() method directly.
-    -->
-
+<body class="bg-black">
+   <div>
+      <h1 id="title" class="heading">DOM Learning on Learning Javascript</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+   </div>
 </body>
-</html>
+</html>
