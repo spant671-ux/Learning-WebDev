@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JavaScript: setTimeout & clearTimeout</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <!-- Heading element whose text will be modified asynchronously -->
+    <h1>Hello</h1>
+
+    <!-- Button element to cancel the pending setTimeout timer -->
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // ==================== Async Timing Events: setTimeout & clearTimeout ====================
+
+    /*
+    1. setTimeout(callback, delayInMs):
+       - A Web API timer method provided by the browser environment.
+       - Schedules a callback function to run ONCE asynchronously after the specified delay (in milliseconds).
+       - Returns a numeric timer identifier ID.
+
+    2. clearTimeout(timerId):
+       - Cancels a previously scheduled setTimeout timer.
+       - Prevents the callback function from executing if called before the delay timer expires.
+    */
+
+    // Callback function 1 (Unused reference example):
+    const sayHello = function(){
+        console.log("Hello");
+    };
+
+    // Callback function 2: Updates heading text in the DOM:
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Best JS Series";
+    };
+
+    // Schedule 'changeText' function to run after 2000ms (2 seconds).
+    // Store the returned timer ID reference in variable 'changeMe':
+    const changeMe = setTimeout(changeText, 2000);
+
+    // Attach click event listener to the Stop button:
+    document.querySelector("#stop").addEventListener('click', function(){
+        // Cancel the pending setTimeout timer using its ID:
+        clearTimeout(changeMe);
+        console.log("stopped");
+    });
+</script>
+</html>
